@@ -1,0 +1,81 @@
+{
+  "db": "SQLite",
+  "2a763aa453c75f09b88dfb05374aec015d91882f91a2aa6fd66ab8ca183cb9de": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Right": 0
+      }
+    },
+    "query": "INSERT INTO friendships VALUES (1, 2), (1, 3), (2, 4), (2, 5)"
+  },
+  "58b37484b8811cbcbe437be150b0ac980ffc2b9413ef1c0b7e0a2bbb4454298d": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Right": 2
+      }
+    },
+    "query": "INSERT INTO friendships VALUES (?, ?)"
+  },
+  "78b0d949f6adc9177e1f7b140aea694f97cea331a778ca9a99290ee081eaf6f6": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Right": 0
+      }
+    },
+    "query": "INSERT INTO users VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9)"
+  },
+  "9233178c9b821ec949d256c32d50f327af65a59ea090ee8f644e77bf6c4f5a25": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Right": 0
+      }
+    },
+    "query": "INSERT INTO users VALUES (1), (2), (3), (4), (5)"
+  },
+  "93381f004a492fc361d291aa89c923cbf177e84fd0e2a427db68478d76e2999c": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Right": 1
+      }
+    },
+    "query": "INSERT INTO users VALUES (?)"
+  },
+  "a0a2b44890cb8b6adfb8003b1f31795699abb68276571b83760e1de438eae5dd": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Right": 0
+      }
+    },
+    "query": "INSERT INTO friendships VALUES (1, 2), (1, 3), (2, 4), (2, 5), (3, 6), (4, 7), (5, 8), (6, 9)"
+  },
+  "b0eb6e79c41943e6a3e95d204e9df83b9ce61873b2172f52adb33445051b15d4": {
+    "describe": {
+      "columns": [
+        {
+          "name": "friend_id",
+          "ordinal": 0,
+          "type_info": "Int64"
+        }
+      ],
+      "nullable": [
+        false
+      ],
+      "parameters": {
+        "Right": 1
+      }
+    },
+    "query": "SELECT friend_id FROM user_friends WHERE user_id = ?"
+  }
+}
